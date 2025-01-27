@@ -1,12 +1,10 @@
 [package]
-name = "[package]
-name = "budget_tracker_rust"
+name = "budget_tracker_rust"  
 version = "0.0.1"
 edition = "2021"
 
 [dependencies]
 
 [lib]
-name = "[package]
-name = "budget_tracker_rust"
-path = "src/main.rs"
+name = "budget_tracker_rust"  
+path = "src/main.rs"          

@@ -1,4 +1,3 @@
-
 name: Release Statically Linked Rust Binary
 
 on:
@@ -24,6 +23,12 @@ jobs:
 
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
+
+      - name: Disable HTTP multiplexing for Rust 1.70 and 1.71
+        run: |
+          if rustc +stable --version --verbose | grep -q '^release: 1\.7[01]\.'; then
+            echo CARGO_HTTP_MULTIPLEXING=false >> $GITHUB_ENV
+          fi
 
       - name: Install Cross
         run: cargo install cross
@@ -57,4 +62,3 @@ jobs:
             *.zip
         env:
           GITHUB_TOKEN: ${{ secrets.COMMR }}
-
