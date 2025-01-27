@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub mod transaction;
 
 use transaction::add_transaction;
