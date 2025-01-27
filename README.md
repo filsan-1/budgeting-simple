@@ -1,1 +1,1 @@
-# BudgetTrackerRust
+simple budjeting made with rust
