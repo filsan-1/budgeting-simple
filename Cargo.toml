@@ -1,10 +1,11 @@
 [package]
-name = "budget_tracker_rust"  
+name = "budget_tracker_rust"
 version = "0.0.1"
 edition = "2021"
 
 [dependencies]
 
-[lib]
-name = "budget_tracker_rust"  
-path = "src/main.rs"          
+[[bin]]
+name = "commr"  # This is the binary name you want
+path = "src/main.rs"
+    
