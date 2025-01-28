@@ -1,87 +1,116 @@
-/* Reset some default styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
+/* Style for the entire page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+}
+
+/* Container for content */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
     text-align: center;
-}
-
-/* Heading Styling */
-h1 {
-    color: #333;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-/* Description Text */
-p {
-    color: #555;
-    font-size: 18px;
     margin-bottom: 30px;
 }
 
-/* Container for the download links */
-.download-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; /* Space between download buttons */
-    padding: 20px;
-    max-width: 400px; /* Limit width for better design */
-    margin-top: 20px;
+header h1 {
+    font-size: 2.5em;
+    color: #1c7ed6;
 }
 
-/* Styling for each download link */
-.download-container a {
-    background-color: #007BFF;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    width: 250px; /* Button width */
+header p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #6c757d;
+}
+
+/* Introduction section */
+.introduction h2 {
+    font-size: 2em;
+    color: #1c7ed6;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.introduction ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.introduction ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Downloads Section */
+.downloads {
+    margin-top: 40px;
     text-align: center;
+}
+
+.downloads h2 {
+    font-size: 2em;
+    color: #1c7ed6;
+    margin-bottom: 20px;
+}
+
+.download-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.button {
+    background-color: #1c7ed6;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
 }
 
-/* Hover effect for the download buttons */
-.download-container a:hover {
+.button:hover {
+    background-color: #155a8a;
+}
+
+.button:active {
+    background-color: #0d4774;
+}
+
+.linux {
+    background-color: #28a745;
+}
+
+.arm {
+    background-color: #17a2b8;
+}
+
+.windows {
+    background-color: #007bff;
+}
+
+.linux:hover {
+    background-color: #218838;
+}
+
+.arm:hover {
+    background-color: #117a8b;
+}
+
+.windows:hover {
     background-color: #0056b3;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-}
-
-/* Footer Styling */
-footer {
-    margin-top: 30px;
-    color: #777;
-    font-size: 14px;
-}
-
-/* Responsive styling for mobile */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 28px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .download-container a {
-        width: 200px; /* Make buttons smaller on mobile */
-    }
 }
