@@ -1,4 +1,4 @@
-/* Global Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,6 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 20px;
-    margin: 0;
     background: linear-gradient(135deg, #FFABAB, #FFC3A0);
 }
 
@@ -37,40 +36,10 @@ header {
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    font-weight: 700;
 }
 
 header p {
     font-size: 1.2rem;
-    font-weight: 300;
-}
-
-/* Main Content Section */
-main {
-    margin-top: 40px;
-    text-align: center;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-/* Button Styling */
-button, a {
-    display: inline-block;
-    background-color: #FF6B81;
-    color: white;
-    text-decoration: none;
-    padding: 12px 20px;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    transition: all 0.3s ease-in-out;
-    margin: 15px;
-}
-
-button:hover, a:hover {
-    background-color: #FF4779;
-    transform: translateY(-3px);
 }
 
 /* Download Section */
@@ -100,7 +69,6 @@ button:hover, a:hover {
     font-size: 1.5rem;
     color: #FF6B81;
     margin-bottom: 20px;
-    font-weight: 600;
 }
 
 .download-item p {
@@ -112,11 +80,11 @@ button:hover, a:hover {
 .download-item a {
     width: 100%;
     padding: 12px 20px;
-    text-align: center;
     border-radius: 25px;
     background-color: #FFD3E0;
     color: #FF6B81;
-    font-weight: 600;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .download-item a:hover {
@@ -132,32 +100,6 @@ footer {
     background-color: #FF6B81;
     color: white;
     border-radius: 15px;
-    box-shadow: 0px 10px 20px rgba(255, 105, 120, 0.3);
 }
 
-footer p {
-    font-size: 1.1rem;
-    font-weight: 300;
-}
-
-/* Responsive Styling */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .download-item {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    button, a {
-        padding: 10px 15px;
-        font-size: 1rem;
-    }
-}
 
