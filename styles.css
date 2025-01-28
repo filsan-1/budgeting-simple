@@ -1,116 +1,163 @@
-/* Style for the entire page */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f7fa;
-    color: #333;
+/* Global Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Container for content */
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+    background: linear-gradient(135deg, #FFABAB, #FFC3A0);
+}
+
+/* Main Container */
 .container {
-    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Header */
+/* Header Section */
 header {
+    background-color: #FF6B81;
+    color: white;
     text-align: center;
-    margin-bottom: 30px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0px 10px 20px rgba(255, 105, 120, 0.3);
 }
 
 header h1 {
-    font-size: 2.5em;
-    color: #1c7ed6;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
 header p {
-    font-size: 1.1em;
-    margin-top: 10px;
-    color: #6c757d;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
-/* Introduction section */
-.introduction h2 {
-    font-size: 2em;
-    color: #1c7ed6;
-    margin-bottom: 20px;
-}
-
-.introduction p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-.introduction ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.introduction ul li {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-/* Downloads Section */
-.downloads {
+/* Main Content Section */
+main {
     margin-top: 40px;
     text-align: center;
 }
 
-.downloads h2 {
-    font-size: 2em;
-    color: #1c7ed6;
-    margin-bottom: 20px;
+section {
+    margin-bottom: 40px;
 }
 
-.download-options {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.button {
-    background-color: #1c7ed6;
+/* Button Styling */
+button, a {
+    display: inline-block;
+    background-color: #FF6B81;
     color: white;
-    padding: 12px 24px;
     text-decoration: none;
-    font-size: 1.1em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    margin: 15px;
 }
 
-.button:hover {
-    background-color: #155a8a;
+button:hover, a:hover {
+    background-color: #FF4779;
+    transform: translateY(-3px);
 }
 
-.button:active {
-    background-color: #0d4774;
+/* Download Section */
+.download-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
-.linux {
-    background-color: #28a745;
+.download-item {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 250px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
-.arm {
-    background-color: #17a2b8;
+.download-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.windows {
-    background-color: #007bff;
+.download-item h3 {
+    font-size: 1.5rem;
+    color: #FF6B81;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
-.linux:hover {
-    background-color: #218838;
+.download-item p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
 }
 
-.arm:hover {
-    background-color: #117a8b;
+.download-item a {
+    width: 100%;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #FFD3E0;
+    color: #FF6B81;
+    font-weight: 600;
 }
 
-.windows:hover {
-    background-color: #0056b3;
+.download-item a:hover {
+    background-color: #FF4779;
+    color: white;
 }
+
+/* Footer Section */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #FF6B81;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(255, 105, 120, 0.3);
+}
+
+footer p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .download-item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    button, a {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}
+
