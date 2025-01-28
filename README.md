@@ -1,1 +1,1 @@
-simple budjeting made with rust
+simple budgeting made with rust
